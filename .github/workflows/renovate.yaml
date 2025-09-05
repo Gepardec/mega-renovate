@@ -1,0 +1,28 @@
+name: Trigger Renovate
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+
+      - name: Self-hosted Renovate
+        uses: renovatebot/github-action@v41.0.14
+        with:
+          renovate-version: full
+          token: ${{ secrets.RENOVATE_TOKEN }}
+          configurationFile: renovate-config.js
+        env:
+          LOG_LEVEL: info
