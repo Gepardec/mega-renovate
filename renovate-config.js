@@ -13,5 +13,8 @@ module.exports = {
             groupSlug: "quarkus_{{currentVersion}}_{{newVersion}}"
         }
     ],
-    recreateWhen: "always"
+    recreateWhen: "always",
+    baseBranches: [
+        "feature/base-auto-update"
+    ],
 };
