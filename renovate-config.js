@@ -5,6 +5,7 @@ module.exports = {
         "Gepardec/mega-backend"
     ],
     prHourlyLimit: 0,
+    prConcurrentLimit: 0,
     separateMajorMinor: false,
     packageRules: [
         {
