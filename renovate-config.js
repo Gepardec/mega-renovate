@@ -2,7 +2,8 @@ module.exports = {
     gitAuthor: 'Renovate Bot <bot@renovateapp.com>',
     platform: 'github',
     repositories: [
-        "Gepardec/mega-backend"
+        "Gepardec/mega-backend",
+        "Gepardec/mega-renovate"
     ],
     prHourlyLimit: 0,
     prConcurrentLimit: 0,
