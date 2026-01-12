@@ -3,7 +3,8 @@ module.exports = {
     platform: 'github',
     repositories: [
         "Gepardec/mega-backend",
-        "Gepardec/mega-renovate"
+        "Gepardec/mega-renovate",
+        "Gepardec/auto-update-tech"
     ],
     prHourlyLimit: 0,
     prConcurrentLimit: 0,
