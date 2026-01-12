@@ -10,7 +10,10 @@ module.exports = {
     separateMajorMinor: false,
     packageRules: [
         {
-            matchRepositories: ["Gepardec/mega-renovate"],
+            matchRepositories: [
+                "Gepardec/mega-renovate",
+                "Gepardec/auto-update-tech"
+            ],
             baseBranches: ["main"]
         },
         {
