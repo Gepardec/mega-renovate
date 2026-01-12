@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '24'
 
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@v41.0.14
