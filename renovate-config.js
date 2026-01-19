@@ -11,21 +11,13 @@ module.exports = {
     separateMajorMinor: false,
     packageRules: [
         {
-            matchRepositories: [
-                "Gepardec/mega-renovate",
-                "Gepardec/auto-update-tech"
-            ],
-            baseBranches: ["main"]
-        },
-        {
-            matchRepositories: ["Gepardec/mega-backend"],
-            baseBranches: ["feature/base-auto-update"]
-        },
-        {
             matchPackageNames: ["io.quarkus{/,}**"],
             groupName: "quarkus",
             groupSlug: "quarkus_{{currentVersion}}_{{newVersion}}"
         }
+    ],
+    baseBranches: [
+        "feature/base-auto-update"
     ],
     recreateWhen: "always"
 };
