@@ -11,7 +11,7 @@ module.exports = {
     separateMajorMinor: false,
     packageRules: [
         {
-            matchPackageNames: ["io.quarkus{/,}**"],
+            matchPackagePrefixes: ["io.quarkus"],
             groupName: "quarkus",
             groupSlug: "quarkus_{{currentVersion}}_{{newVersion}}"
         }
